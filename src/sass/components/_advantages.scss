@@ -1,0 +1,58 @@
+.advantages-section {
+  background-color: $light-section-color;
+  padding-top: 39px;
+}
+.advantages-container {
+  padding-right: 17px;
+}
+.advantages-list {
+  margin-bottom: -38px;
+}
+.advantages-item {
+  margin-bottom: 38px;
+  max-width: 230px;
+}
+
+.advantages-item__milk::before {
+  content: '';
+  display: block;
+  width: 33px;
+  height: 50px;
+  background-image: url(../images/advantages/advantages-1.png);
+  margin-bottom: 16px;
+}
+.advantages-item__fruit::before {
+  content: '';
+  display: block;
+  width: 50px;
+  height: 50px;
+  background-image: url(../images/advantages/advantages-2.png);
+  margin-bottom: 16px;
+}
+.advantages-item__icecream::before {
+  content: '';
+  display: block;
+  width: 44px;
+  height: 50px;
+  background-image: url(../images/advantages/advantages-3.png);
+  margin-bottom: 16px;
+}
+.advantages-item__text {
+  font-family: $main-font;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 1.7;
+  color: $prymary-text-color;
+}
+
+.advantages-item__accent {
+  display: block;
+  font-family: $title-font;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 1.14;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: $secondary-text-color;
+  margin-bottom: 19px;
+}
