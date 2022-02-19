@@ -1,12 +1,12 @@
 .about {
   padding-top: 125px;
-  padding-bottom: 39px;
+  // padding-bottom: 39px;
   background-color: $light-section-color;
 
   background-image: url(../images/about/mob-milk-1x-left.png),
     url(../images/about/mob-milk-1x-right.png);
   background-repeat: no-repeat;
-  background-position: left 0 bottom 100px, right 0 bottom 100px;
+  background-position: left 0 bottom 90px, right 0 bottom 90px;
 
   @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
     background-image: url(../images/about/mob-milk-2x-left.png),
@@ -19,12 +19,12 @@
 
   @media screen and (min-width: 768px) {
     padding-top: 130px;
-    padding-bottom: 66px;
+    // padding-bottom: 66px;
   }
 
   @media screen and (min-width: 1280px) {
     padding-top: 125px;
-    padding-bottom: 39px;
+    // padding-bottom: 39px;
 
     background-image: url(../images/about/desk-milk-1x-left.png),
       url(../images/about/desk-milk-1x-right.png);
@@ -112,6 +112,7 @@
     font-size: 16px;
     line-height: 1.76;
     letter-spacing: 0.04em;
+    margin-bottom: 35px;
   }
 }
 
@@ -134,6 +135,10 @@
   @media screen and (min-width: 768px) {
     margin-bottom: 25px;
   }
+
+  @media screen and (min-width: 1280px) {
+    margin-bottom: 40px;
+  }
 }
 
 .btn-about {
@@ -141,10 +146,10 @@
   font-weight: bold;
   font-size: 14px;
   line-height: 1.29;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
+  // display: flex;
+  // justify-content: center;
+  // align-items: center;
+  // text-align: center;
   color: $secondary-text-color;
   width: 176px;
   height: 44px;
@@ -162,18 +167,23 @@
   @media screen and (min-width: 768px) {
     margin-top: 62px;
   }
+
+  @media screen and (min-width: 1280px) {
+    font-size: 16px;
+    line-height: 1.31;
+    margin-top: 45px;
+  }
 }
 
 .btn-about__icon {
-  // display: block;
-  // fill: $secondary-text-color;
-  margin-left: 14px;
+  margin-left: 13px;
 }
 
 .description-about {
   @media screen and (min-width: 768px) {
     display: flex;
     flex-direction: row;
+    justify-content: center;
   }
 }
 
@@ -188,7 +198,15 @@
 }
 
 .text-about {
+  width: 220px;
+  margin-left: auto;
+  margin-right: auto;
+
   @media screen and (min-width: 768px) {
     width: 340px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    width: 463px;
   }
 }
