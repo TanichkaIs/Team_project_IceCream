@@ -163,6 +163,9 @@
     background-color: $secondary-text-color;
     color: $light-color;
   }
+  &:hover .product-item__icon {
+    fill: $main-color;
+  }
 }
 
 .product-item__icon {
