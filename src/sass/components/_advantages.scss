@@ -55,7 +55,9 @@
   display: block;
   width: 33px;
   height: 50px;
-  background-image: url(../images/advantages/advantages-1.png);
+  // background-image: url(../images/advantages/advantages-1.png);
+  background-image: url(../images/advantages/milk.svg);
+
   margin-bottom: 16px;
   @media screen and (min-width: 768px) {
     margin-bottom: 36px;
@@ -69,7 +71,7 @@
   display: block;
   width: 50px;
   height: 50px;
-  background-image: url(../images/advantages/advantages-2.png);
+  background-image: url(../images/advantages/fruit.svg);
   margin-bottom: 16px;
   @media screen and (min-width: 768px) {
     margin-bottom: 36px;
@@ -83,7 +85,7 @@
   display: block;
   width: 44px;
   height: 50px;
-  background-image: url(../images/advantages/advantages-3.png);
+  background-image: url(../images/advantages/icecream.svg);
   margin-bottom: 16px;
   @media screen and (min-width: 768px) {
     margin-bottom: 36px;
