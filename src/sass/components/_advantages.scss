@@ -1,11 +1,13 @@
 .advantages-section {
   background-color: $light-section-color;
-  padding-top: 39px;
+  padding-top: 20px;
+  padding-bottom: 48px;
   @media screen and (min-width: 768px) {
-    padding-top: 66px;
+    padding-top: 33px;
+    padding-bottom: 70px;
   }
   @media screen and (min-width: 1280px) {
-    padding-top: 39px;
+    padding-top: 20px;
   }
 }
 .advantages-container {
