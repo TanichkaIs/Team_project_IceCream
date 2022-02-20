@@ -74,18 +74,25 @@
   color: #d41443;
   transition: background-color 250ms linear, color 250ms linear;
 
-  &:hover {
+  &:hover,
+  &:focus {
     color: #ffffff;
     background-color: rgba(212, 20, 67, 1);
   }
-  &:hover .header-icon {
-    fill: ffffff;
+  &:hover > .header-icon,
+  ,
+  &:focus > .header-icon {
+    fill: white;
   }
 }
 
 .header-icon {
+  width: 20px;
   margin-left: 12px;
-  fill: #d41443;
+  fill: $secondary-text-color;
+}
+.header-icon:hover {
+  fill: white;
 }
 
 .hero-title {
