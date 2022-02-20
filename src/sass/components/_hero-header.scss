@@ -251,3 +251,20 @@
   left: 295px;
   bottom: 56px;
 }
+
+.topbutton {
+  width: 100px;
+  border: 2px solid #ccc;
+  background: #f7f7f7;
+  text-align: center;
+  padding: 10px;
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+  cursor: pointer;
+  color: #d41443;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.31;
+  border-radius: 22px;
+}
