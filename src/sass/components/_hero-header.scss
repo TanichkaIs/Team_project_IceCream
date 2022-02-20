@@ -1,6 +1,5 @@
 .header-container {
   position: absolute;
-
   top: 37px;
   z-index: 10;
   display: flex;
@@ -9,7 +8,6 @@
 
 .header {
   position: relative;
-
   height: 665px;
   background-color: $header-section-color;
 }
@@ -71,11 +69,20 @@
   border-radius: 22px;
   border-color: transparent;
   color: #d41443;
+  transition: background-color 250ms linear, color 250ms linear;
 
   &:hover {
     color: #ffffff;
-    background: rgba(212, 20, 67, 1);
+    background-color: rgba(212, 20, 67, 1);
   }
+  &:hover .header-icon {
+    fill: ffffff;
+  }
+}
+
+.header-icon {
+  margin-left: 12px;
+  fill: #d41443;
 }
 
 .hero-title {
@@ -111,7 +118,6 @@
 
 .hero-btn-left {
   margin-right: 17px;
-
   width: 104px;
   height: 40px;
   font-family: DM Sans;
@@ -125,10 +131,11 @@
   border-radius: 22px;
   border-color: transparent;
   color: #d41443;
+  transition: background-color 250ms linear, color 250ms linear;
 
   &:hover {
     color: #ffffff;
-    background: rgba(212, 20, 67, 1);
+    background-color: rgba(212, 20, 67, 1);
   }
 }
 
@@ -147,10 +154,11 @@
   border-radius: 20px;
   border-color: transparent;
   color: #d41443;
+  transition: background-color 250ms linear, color 250ms linear;
 
   &:hover {
     color: #ffffff;
-    background: rgba(212, 20, 67, 1);
+    background-color: rgba(212, 20, 67, 1);
   }
 }
 
@@ -173,6 +181,7 @@
 
 .hero-text {
   position: absolute;
+  z-index: 3;
   top: 160px;
   right: 115px;
 }
@@ -222,4 +231,22 @@
   &:last-child {
     margin-right: 0;
   }
+
+  &::before {
+    content: '';
+    z-index: -1;
+    display: block;
+    position: absolute;
+    left: 47px;
+    width: 30px;
+    height: 30px;
+    background-color: rgba(255, 255, 255, 1);
+    border-radius: 50%;
+  }
+}
+
+.hero-icon {
+  position: absolute;
+  left: 295px;
+  bottom: 56px;
 }
