@@ -1,6 +1,6 @@
 .about {
   padding-top: 125px;
-  // padding-bottom: 39px;
+  padding-bottom: 20px;
   background-color: $light-section-color;
 
   background-image: url(../images/about/mob-milk-1x-left.png),
@@ -19,12 +19,12 @@
 
   @media screen and (min-width: 768px) {
     padding-top: 130px;
-    // padding-bottom: 66px;
+    padding-bottom: 33px;
   }
 
   @media screen and (min-width: 1280px) {
     padding-top: 125px;
-    // padding-bottom: 39px;
+    padding-bottom: 20px;
 
     background-image: url(../images/about/desk-milk-1x-left.png),
       url(../images/about/desk-milk-1x-right.png);
