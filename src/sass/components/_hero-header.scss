@@ -65,10 +65,11 @@
     background-color: rgba(212, 20, 67, 1);
   }
   &:hover .header-icon {
-    fill: ffffff;
+    fill: #ffffff;
   }
 }
 .header-icon {
+  width: 20px;
   margin-left: 12px;
   fill: #d41443;
 }
