@@ -1,5 +1,18 @@
 .section-contacts {
-  background-color: tomato;
+  background-image: linear-gradient(to bottom, $main-color 8%, $light-section-color 1%);
+  padding-top: 43px;
+  padding-bottom: 56px;
+  @media screen and (min-width: 768px) {
+    background-image: linear-gradient(to bottom, $main-color 18%, $light-section-color 1%);
+    padding-top: 60px;
+    padding-bottom: 79px;
+  }
+  @media screen and (min-width: 1280px) {
+    background-image: url(../images/contacts/left-dots.png), url(../images/contacts/right-dots.png),
+      linear-gradient(to bottom, $main-color 20%, $light-section-color 1%);
+    background-repeat: no-repeat;
+    background-position: left 0 top 235px, right 0 top 355px, top 20% left 0;
+  }
 }
 
 .contacts-list {
@@ -63,7 +76,7 @@
 
 .contacts-list__name {
   margin-bottom: 25px;
-  background-color: #f0d1a5;
+  background-color: $brown-color;
   border-radius: 6px;
   font-weight: 500;
   font-size: 12px;
@@ -81,7 +94,9 @@
     }
   }
 }
-
+.dop-name {
+  background-color: $green-color;
+}
 .contacts-list__titel {
   margin-bottom: 10px;
   font-weight: 500;
