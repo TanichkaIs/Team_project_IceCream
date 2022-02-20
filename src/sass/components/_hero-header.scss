@@ -1,6 +1,5 @@
 .header-container {
   position: absolute;
-
   top: 37px;
   z-index: 10;
   display: flex;
@@ -9,7 +8,6 @@
 
 .header {
   position: relative;
-
   height: 665px;
   background-color: $header-section-color;
 }
@@ -49,12 +47,15 @@
 
 .hero {
   position: relative;
-  width: 1280px;
+  width: 100%;
   height: 665px;
   background-image: url(../images/header/hero-backgraund.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  @media screen and (min-width: 1280px) {
+    width: 1200px;
+  }
 }
 
 .header__btn {
@@ -71,11 +72,26 @@
   border-radius: 22px;
   border-color: transparent;
   color: #d41443;
+  transition: background-color 250ms linear, color 250ms linear;
 
-  &:hover {
+  &:hover,
+  &:focus {
     color: #ffffff;
-    background: rgba(212, 20, 67, 1);
+    background-color: rgba(212, 20, 67, 1);
   }
+  &:hover > .header-icon,
+  &:focus > .header-icon {
+    fill: white;
+  }
+}
+
+.header-icon {
+  width: 20px;
+  margin-left: 12px;
+  fill: $secondary-text-color;
+}
+.header-icon:hover {
+  fill: white;
 }
 
 .hero-title {
@@ -111,7 +127,6 @@
 
 .hero-btn-left {
   margin-right: 17px;
-
   width: 104px;
   height: 40px;
   font-family: DM Sans;
@@ -125,10 +140,11 @@
   border-radius: 22px;
   border-color: transparent;
   color: #d41443;
+  transition: background-color 250ms linear, color 250ms linear;
 
   &:hover {
     color: #ffffff;
-    background: rgba(212, 20, 67, 1);
+    background-color: rgba(212, 20, 67, 1);
   }
 }
 
@@ -147,10 +163,11 @@
   border-radius: 20px;
   border-color: transparent;
   color: #d41443;
+  transition: background-color 250ms linear, color 250ms linear;
 
   &:hover {
     color: #ffffff;
-    background: rgba(212, 20, 67, 1);
+    background-color: rgba(212, 20, 67, 1);
   }
 }
 
@@ -173,6 +190,7 @@
 
 .hero-text {
   position: absolute;
+  z-index: 3;
   top: 160px;
   right: 115px;
 }
@@ -222,4 +240,22 @@
   &:last-child {
     margin-right: 0;
   }
+
+  &::before {
+    content: '';
+    z-index: -1;
+    display: block;
+    position: absolute;
+    left: 47px;
+    width: 30px;
+    height: 30px;
+    background-color: rgba(255, 255, 255, 1);
+    border-radius: 50%;
+  }
+}
+
+.hero-icon {
+  position: absolute;
+  left: 295px;
+  bottom: 56px;
 }
