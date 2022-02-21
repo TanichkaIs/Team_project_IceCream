@@ -56,4 +56,59 @@
       <a class="hero-icon" href=""><img src="./images/header/icon-hero.png" alt="milk" /></a>
     </section>
   </div>
+  <button
+  class="open-menu js-open-menu"
+  type="button"
+  aria-expanded="false"
+  aria-controls="mobile-menu">
+  <svg width="24" height="16">
+     <use
+        class="menu-button__icon-menu"
+        href="./images/sprite.svg#icon-menu_24px"
+     ></use>
+  </svg>
+</button>
+  <!-- MOB-MENU -->
+  <button class="header__btn">
+    Buy now<svg class="header-icon" width="4" height="8">
+      <use href="./images/sprite.svg#icon-header-btn"></use>
+    </svg>
+  </button>
+<div class="mob-menu" id="mobile-menu">
+<div class="mob-menu__container js-menu container">
+   <button class="mob-menu__close-btn js-close-menu" type="button">
+         <svg width="40" height="40">
+            <use
+               class="mob-menu__icon-close"
+               href="./images/sprite.svg#icon-close"
+            ></use>
+         </svg>
+      </button>
+      <nav class="mob-menu__nav">
+         <ul class="mob-menu__list">
+            <li class="mob-menu__item mob-menu__link-current">
+               <a
+                  class="mob-menu__link"
+                  href="./index.html"
+                  >Home
+                  </a
+               >
+            </li>
+            <li class="mob-menu__item">
+               <a href="mob-menu__link"  class="mob-menu__link"
+                  >About us</a
+               >
+            </li>
+            <li class="mob-menu__item">
+               <a class="mob-menu__link" href="#about">How it’s made?</a>
+            </li>
+            <li class="mob-menu__item">
+              <a class="mob-menu__link" href="#gallery">Our products</a>
+           </li>
+           <li class="mob-menu__item">
+            <a class="mob-menu__link" href="#footer">Contact</a>
+         </li>
+         </ul>
+      </nav>
+   </div>
 </header>
