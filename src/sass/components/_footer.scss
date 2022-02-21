@@ -13,6 +13,7 @@
   }
 }
 .footer {
+  position: relative;
   background-color: $light-section-color;
   @media screen and (min-width: 320px) {
     display: flex;
@@ -31,6 +32,20 @@
     display: flex;
     padding-top: 82px;
     padding-bottom: 10px;
+  }
+  &::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    background-color: $linear-color;
+    bottom: 89px;
+    @media screen and (min-width: 768px) {
+      bottom: 73px;
+    }
+    @media screen and (min-width: 1280px) {
+      bottom: 45px;
+    }
   }
 }
 .footer__link--list {
@@ -221,7 +236,6 @@
   fill: $main-color;
 }
 .position {
-  border-bottom: 1px solid #e1e1e1;
   @media screen and (min-width: 768px) {
     display: flex;
     flex-direction: row;
