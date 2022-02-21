@@ -6,7 +6,7 @@
   background-image: url(../images/about/mob-milk-1x-left.png),
     url(../images/about/mob-milk-1x-right.png);
   background-repeat: no-repeat;
-  background-position: left 0 bottom 90px, right 0 bottom 90px;
+  background-position: left 0 top 766px, right 0 top 766px;
 
   @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
     background-image: url(../images/about/mob-milk-2x-left.png),
@@ -29,7 +29,7 @@
     background-image: url(../images/about/desk-milk-1x-left.png),
       url(../images/about/desk-milk-1x-right.png);
     background-repeat: no-repeat;
-    background-position: left 0 bottom -40px, right 0 bottom -40px;
+    background-position: left 0 top 342px, right 0 top 342px;
 
     @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
       background-image: url(../images/about/mob-milk-2x-left.png),
@@ -92,7 +92,8 @@
 
 .text-about__first-paragraph,
 .text-about__second-paragraph,
-.text-about__third-paragraph {
+.text-about__third-paragraph,
+.text-about__extra-text {
   font-family: $main-font;
   font-weight: 500;
   font-size: 12px;
@@ -118,7 +119,8 @@
 }
 
 .text-about__second-paragraph,
-.text-about__third-paragraph {
+.text-about__third-paragraph,
+.text-about__extra-text {
   color: $add-text-color;
 
   @media screen and (min-width: 768px) {
@@ -142,7 +144,11 @@
   }
 }
 
-.btn-about {
+.text-about__extra-text {
+  margin-top: 20px;
+}
+
+.read-more {
   font-family: $main-font;
   font-weight: bold;
   font-size: 14px;
@@ -155,6 +161,9 @@
   border: none;
   margin-top: 30px;
   cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   transition: background-color 250ms linear, color 250ms linear;
 
   &:hover,
@@ -177,6 +186,31 @@
   width: 20px;
   fill: currentColor;
   margin-left: 12px;
+}
+
+.text-about__extra-text {
+  display: none;
+}
+
+#read-more:checked ~ .text-about__extra-text {
+  display: block;
+}
+
+.more {
+  margin-left: 4px;
+}
+
+.less {
+  display: none;
+}
+
+#read-more:checked ~ .read-more .more {
+  display: none;
+}
+
+#read-more:checked ~ .read-more .less {
+  display: inline;
+  margin-left: 4px;
 }
 
 .description-about {
