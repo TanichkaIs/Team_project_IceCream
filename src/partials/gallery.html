@@ -1,28 +1,33 @@
+
 <section class="section-gallery" id="gallery">
+
   <div class="container">
-    <picture>
-      <source
-        srcset="
-          ./images/gallery/desktop_gallery_1x.jpg 1x,
-          ./images/gallery/desktop_gallery_2x.jpg 2x
-        "
-        media="(min-width:1800px)"
-      />
-      <source
-        srcset="
-          ./images/gallery/tablet_gallery_1x.jpg 1x,
-          ./images/gallery/tablet_gallery_2x.jpg 2x
-        "
-        media="(min-width:768px)"
-      />
-      <source
-        srcset="
-          ./images/gallery/mobile_gallery_1x.jpg 1x,
-          ./images/gallery/mobile_gallery_2x.jpg 2x
-        "
-        media="(min-width:480px)"
-      />
-      <img src="./images/gallery/mobile_gallery_1x.jpg" alt="gallery-picture" width="100%" />
-    </picture>
+  <div class="grid-wrapper">
+    <div class="gallery__img-wrap">
+      <img class="gallery__img" src="./images/gallery/img_grid_gallery-1.jpg" alt="#" />
+    </div>
+    <div class="gallery__img-wrap">
+      <img class="gallery__img" src="./images/gallery/img_grid_gallery-2.jpg" alt="#" />
+      <img class="gallery__img" src="./images/gallery/img_grid_gallery-3.jpg" alt="#" />
+    </div>
+    <div class="gallery__img-wrap">
+      <img class="gallery__img big" src="./images/gallery/img_grid_gallery-4.jpg" alt="#" />
+      <img class="gallery__img z" src="./images/gallery/img_grid_gallery-5.jpg" alt="#" />
+    </div>
+    <div class="gallery__img-wrap fix">
+      <div class="fix__divbot">
+      <img class="gallery__img" src="./images/gallery/img_grid_gallery-6.jpg" alt="#" />
+      <img class="gallery__img" src="./images/gallery/img_grid_gallery-7.jpg" alt="#" />
+      </div>
+    </div>
+    <div class="gallery__img-wrap fix">
+      <div class="fix__divtop">
+      <img class="gallery__img" src="./images/gallery/img_grid_gallery-8.jpg" alt="#" />
+      <img class="gallery__img" src="./images/gallery/img_grid_gallery-9.jpg" alt="#" />
+      </div>
+    </div>
+    <div class="gallery__img-wrap">
+      <img class="gallery__img" src="./images/gallery/img_grid_gallery-10.jpg" alt="#" />
+    </div>
   </div>
 </section>
