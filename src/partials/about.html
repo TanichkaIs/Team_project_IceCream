@@ -1,49 +1,43 @@
-<section class="section about">
-    <div class="container">
-        <p class="about__pre-title">
-            tradition and love
+<section class="section about" id="about">
+  <div class="container">
+    <p class="about__pre-title">tradition and love</p>
+    <h2 class="about__title">how it’s made?</h2>
+    <div class="about__description-about description-about">
+      <div class="description-about__image-thumb image-thumb">
+        <picture class="image-thumb__picture">
+          <source
+            srcset="/images/about/desk-cow-1x.png 1x, /images/about/desk-cow-2x.png 2x"
+            media="(min-width: 1280px)"
+          />
+          <source
+            srcset="/images/about/tab-cow-1x.png 1x, /images/about/tab-cow-2x.png 2x"
+            media="(min-width: 768px)"
+          />
+          <source
+            srcset="/images/about/mob-cow-1x.png 1x, /images/about/mob-cow-2x.png 2x"
+            media="(min-width: 320px)"
+          />
+          <img src="/images/about/desk-cow-1x.png" alt="cow" />
+        </picture>
+      </div>
+      <div class="about__text-about text-about">
+        <p class="text-about__first-paragraph">
+          Fusce ut velit laoreet, tempus arcu eu, molestie tortor. Nam vel justo cursus, faucibus
+          lorem eget, egestas eros. Maecenas eleifend erat at justo fringilla.
         </p>
-        <h2 class="about__title">
-            how it’s made?
-        </h2>
-        <div class="about__description-about description-about">
-            <div class="description-about__image-thumb image-thumb">
-                <picture class="image-thumb__picture">
-                    <source srcset="
-                                    /images/about/desk-cow-1x.png 1x,
-                                    /images/about/desk-cow-2x.png 2x" media="(min-width: 1280px)">
-                    <source srcset="
-                                    /images/about/tab-cow-1x.png 1x,
-                                    /images/about/tab-cow-2x.png 2x" media="(min-width: 768px)">
-                    <source srcset="
-                                    /images/about/mob-cow-1x.png 1x,
-                                    /images/about/mob-cow-2x.png 2x" media="(min-width: 320px)">
-                    <img src="/images/about/desk-cow-1x.png" alt="cow">
-                </picture>
-            </div>
-            <div class="about__text-about text-about">
-                <p class="text-about__first-paragraph">
-                    Fusce ut velit laoreet, tempus arcu eu, molestie tortor. Nam vel justo cursus, faucibus lorem eget, egestas
-                    eros.
-                    Maecenas eleifend erat at justo fringilla.
-                </p>
-                <p class="text-about__second-paragraph">
-                    Curabitur lacinia enim at ex blandit, vel pellentesque odio elementum. Mauris rhoncus orci in imperdiet
-                    placerat.
-                    Vestibulum euismod nisl suscipit ligula volutpat, a feugiat urna maximus. Cras massa nibh, tincidunt.
-                </p>
-                <p class="text-about__third-paragraph">
-                    Aliquam erat volutpat. Aenean accumsan.
-                </p>
-                <button type="button" class="text-about__btn-about btn-about">
-                    Read more
-                    <svg class="btn-about__icon" width="10" height="8">
-                        <use href="/images/sprite.svg#icon-button-vector"></use>
-                    </svg>
-                </button>
-            </div>
-        </div>
-
-
+        <p class="text-about__second-paragraph">
+          Curabitur lacinia enim at ex blandit, vel pellentesque odio elementum. Mauris rhoncus orci
+          in imperdiet placerat. Vestibulum euismod nisl suscipit ligula volutpat, a feugiat urna
+          maximus. Cras massa nibh, tincidunt.
+        </p>
+        <p class="text-about__third-paragraph">Aliquam erat volutpat. Aenean accumsan.</p>
+        <button type="button" class="text-about__btn-about btn-about">
+          Read more
+          <svg class="btn-about__icon" width="10" height="8">
+            <use href="/images/sprite.svg#icon-button-vector"></use>
+          </svg>
+        </button>
+      </div>
     </div>
+  </div>
 </section>
