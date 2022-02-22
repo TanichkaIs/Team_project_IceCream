@@ -148,7 +148,7 @@
   margin-top: 20px;
 }
 
-.read-more {
+.text-about__read-more {
   font-family: $main-font;
   font-weight: bold;
   font-size: 14px;
@@ -182,7 +182,7 @@
   }
 }
 
-.btn-about__icon {
+.about__icon {
   width: 20px;
   fill: currentColor;
   margin-left: 12px;
@@ -196,19 +196,19 @@
   display: block;
 }
 
-.more {
+.text-about__more {
   margin-left: 4px;
 }
 
-.less {
+.text-about__less {
   display: none;
 }
 
-#read-more:checked ~ .read-more .more {
+#read-more:checked ~ .text-about__read-more .text-about__more {
   display: none;
 }
 
-#read-more:checked ~ .read-more .less {
+#read-more:checked ~ .text-about__read-more .text-about__less {
   display: inline;
   margin-left: 4px;
 }
