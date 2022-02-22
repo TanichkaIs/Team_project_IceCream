@@ -2230,6 +2230,7 @@ a {
   font-size: 16px;
   line-height: 1.31;
   border-radius: 22px;
+  border-color: transparent;
 }
 
 .burger-btn {
