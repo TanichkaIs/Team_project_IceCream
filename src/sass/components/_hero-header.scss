@@ -537,6 +537,7 @@
 }
 
 .topbutton {
+  z-index: 4000;
   width: 100px;
   border: 2px solid #ccc;
   background: #f7f7f7;
@@ -551,7 +552,7 @@
   font-size: 16px;
   line-height: 1.31;
   border-radius: 22px;
-  border-color: transparent;
+  border-color: $header-section-color;
 }
 
 //!-- MOB-MENU-1 --//

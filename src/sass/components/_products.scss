@@ -371,7 +371,7 @@
   background-color: $secondary-hover-color;
 }
 
-.less {
+.less1 {
   display: none;
 }
 #first-child:checked ~ .read-more-1 .more,
@@ -380,9 +380,9 @@
   display: none;
 }
 
-#first-child:checked ~ .read-more-1 .less,
-#second-child:checked ~ .read-more-1 .less,
-#third-child:checked ~ .read-more-1 .less {
+#first-child:checked ~ .read-more-1 .less1,
+#second-child:checked ~ .read-more-1 .less1,
+#third-child:checked ~ .read-more-1 .less1 {
   display: inline;
 }
 
@@ -397,7 +397,7 @@
   padding-bottom: 2px;
 }
 
-.less {
+.less1 {
   font-family: $main-font;
   font-weight: 700;
   font-size: 22px;
