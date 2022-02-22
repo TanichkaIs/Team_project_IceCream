@@ -1,9 +1,31 @@
 <header class="header">
   <div class="container">
     <div class="header-container">
-      <a class="logo" href="index.html"
-        ><img src="./images/header/logo.svg" width="199" height="50" alt="site logo"
-      /></a>
+      <a class="logo" href="index.html">
+
+        <picture>
+          <source 
+                    srcset="
+                      ./images/header/logo.svg 1x, 
+                      ./images/header/logo2x.svg 2x"
+                     media="(min-width:1200px)"
+                   />
+
+          <source
+                     srcset="
+                        ./images/header/logodes1x.svg 1x"
+                     media="(min-width:768px)"
+                  />
+          <source
+                     srcset="
+                         ./images/header/logomob1x.svg 1x"
+                     media="(max-width:468px)"
+                  />
+                  <img src="./images/header/logo.svg" width="199" height="50" alt="site logo"
+      />
+      </picture>
+        
+        </a>
       <nav class="header-nav">
         <ul class="nav-menu list">
           <li class="nav-menu__item">
@@ -79,19 +101,84 @@
       </div>
       <div class="hero-round">
         <a class="hero-round__ice" href="#"
-          ><img class="hero-round__ice__image" src="./images/header/ice.png" alt="ice"
-        /></a>
+          >
+          
+          <picture>
+            <source 
+                      srcset="
+                      ./images/header/ice.png 1x, 
+                      ./images/header/ice2x.png 2x"
+                       media="(min-width:1200px)"
+                     />
+  
+            <source
+                       srcset="
+                       ./images/header/icedesk1x.png 1x,
+                       ./images/header/icedesk2x.png 2x"
+                       media="(min-width:768px)"
+                    />
+            <source
+                       srcset="
+                       ./images/header/icemob1x.png 1x,
+                       ./images/header/icemob2x.png 2x"
+                       media="(max-width:767px)"
+                    />
+                    <img class="hero-round__ice__image" src="./images/header/ice.png" alt="ice"
+                    />
+                    
+                    
+        </picture>
+          
+          </a>
       </div>
       <ul class="hero-text list">
         <li class="hero-item"><span>16</span></li>
         <li class="hero-item"><span>21</span></li>
       </ul>
-      <a class="hero-milk" href=""
-        ><img class="hero-milk_image" src="./images/header/milk.png" alt="milk"
-      /></a>
+      <a class="hero-milk" href="">
+        <picture>
+          <source 
+                    srcset="
+                      ./images/header/milk.png 1x, 
+                      ./images/header/milk2x.png 2x"
+                     media="(min-width:1200px)"
+                   />
+
+          <source
+                     srcset="
+                        ./images/header/milkdesk1x.png 1x,
+                        ./images/header/milkdesk2x.png 2x"
+                     media="(min-width:768px)"
+                  />
+          
+                  <img class="hero-milk_image" src="./images/header/milk.png" alt="milk"
+                  />
+                  
+      </picture>
+
+       </a>
       <a class="hero-girl" href=""
-        ><img class="hero-girl_image" src="./images/header/girl.png" alt="girl"
-      /></a>
+        >
+        <picture>
+          <source 
+                    srcset="
+                    ./images/header/girl.png 1x, 
+                    ./images/header/girl2x.png 2x"
+                     media="(min-width:1200px)"
+                   />
+
+          <source
+                     srcset="
+                        ./images/header/girldesk1x.png 1x,
+                        ./images/header/girldesk2x.png 2x"
+                     media="(min-width:768px)"
+                  />
+                  <img class="hero-girl_image" src="./images/header/girl.png" alt="girl"
+                  />
+                         
+      </picture>
+        
+        </a>
       <p class="hero-quote">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
         labore et
