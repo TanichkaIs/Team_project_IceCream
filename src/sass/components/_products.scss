@@ -331,6 +331,7 @@
 }
 
 .read-more-1 {
+  display: flex;
   border-radius: 50%;
   background-color: $main-color;
   color: $secondary-text-color;
@@ -404,4 +405,18 @@
   line-height: 1.52;
   text-align: center;
   color: $main-color;
+}
+.right-arrow {
+  width: 24px;
+  height: 24px;
+  fill: $secondary-hover-color;
+  align-items: center;
+  justify-content: center;
+}
+.icon-close {
+  width: 24px;
+  height: 24px;
+  fill: $main-color;
+  align-items: center;
+  justify-content: center;
 }

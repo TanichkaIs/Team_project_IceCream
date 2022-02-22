@@ -86,7 +86,7 @@
 
   margin: 0 auto;
 }
-#slides article {
+#slides .themain {
   width: 20%;
   float: left;
 }
@@ -98,7 +98,7 @@
   width: 100%;
   overflow: hidden;
 }
-article .slider {
+.themain .slider {
   width: 100%;
 }
 #desktop:checked ~ #sliders {

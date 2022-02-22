@@ -285,17 +285,19 @@
   height: 344px;
   border-radius: 50%;
   background-color: rgba(255, 165, 186, 0.5);
-  -webkit-animation: pulsing 2s infinite;
-  animation: pulsing 2s infinite;
 
   @media screen and (min-width: 768px) and (max-width: 1279px) {
     top: 31px;
     left: 307px;
     width: 324px;
     height: 322px;
+    -webkit-animation: pulsing 2s infinite;
+    animation: pulsing 2s infinite;
   }
 
   @media screen and (min-width: 1280px) {
+    -webkit-animation: pulsing 2s infinite;
+    animation: pulsing 2s infinite;
     top: 52px;
     left: 475px;
     width: 538px;
