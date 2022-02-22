@@ -153,11 +153,11 @@
   font-weight: bold;
   font-size: 14px;
   line-height: 1.29;
-  color: $secondary-text-color;
-  width: 176px;
-  height: 44px;
-  background-color: $main-color;
-  border-radius: 22px;
+  color: $secondary-text-color !important;
+  width: 176px !important;
+  height: 44px !important;
+  background-color: $main-color !important;
+  border-radius: 22px !important;
   border: none;
   margin-top: 30px;
   cursor: pointer;

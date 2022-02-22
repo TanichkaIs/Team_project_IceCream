@@ -1,3 +1,9 @@
+.section-gallery {
+  padding-bottom: 97px;
+  @media screen and (min-width: 768px) {
+    padding-bottom: 122px;
+  }
+}
 .gallery-container {
   display: flex;
 }
