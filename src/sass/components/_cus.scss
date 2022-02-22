@@ -7,6 +7,10 @@
 }
 .customers-review__image {
   margin: 0 auto;
+  width: 85px;
+}
+.desc {
+  background-image: repeating-linear-gradient(0deg, #e1e1e1 0 1px, transparent 1px 31px);
 }
 .cust-text {
   position: relative;
@@ -16,8 +20,9 @@
   margin-right: auto;
   margin-left: auto;
   padding: 43px 66px 26px 57px;
-
+  z-index: 1;
   background: $custumers-color;
+
   @media screen and (min-width: 320px) {
     width: 280px;
   }
@@ -44,9 +49,17 @@
     position: absolute;
     width: 54px;
     height: 40px;
-    top: 29px;
-    left: 15%;
-    z-index: 0;
+    top: 27px;
+    left: 61px;
+    z-index: -1;
+    @media screen and (min-width: 768px) {
+      top: 30px;
+      left: 40px;
+    }
+    @media screen and (min-width: 1280px) {
+      top: 32px;
+      left: 50px;
+    }
   }
   font-style: normal;
   font-weight: 500;
@@ -57,6 +70,7 @@
 }
 .customers-review__icon {
   margin: 0 auto;
+  width: 32px;
 }
 .the-customer {
   font-weight: 500;
