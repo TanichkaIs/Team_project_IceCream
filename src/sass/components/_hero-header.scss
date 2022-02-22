@@ -154,6 +154,7 @@
   letter-spacing: 0.04em;
   text-transform: uppercase;
   color: #ffffff;
+  z-index: 99;
 
   & span {
     display: block;
@@ -279,7 +280,7 @@
 
 .hero-round {
   position: absolute;
-  top: 108px;
+  top: 58px;
   left: 36px;
   width: 346px;
   height: 344px;
@@ -570,7 +571,7 @@
 
   @media screen and (min-width: 768px) and (max-width: 1279px) {
     top: 52px;
-    left: 524px;
+    margin-right: 35%;
   }
 
   @media screen and (min-width: 1280px) {
@@ -652,9 +653,11 @@
   height: 100vh;
   flex-direction: column;
   padding-top: 60px;
-  transition: transform 250ms ease-in-out;
+  transform: translateX(100%);
 
   &.is-open {
+    transition: transform 500ms linear;
+    transform: translateX(0);
     z-index: 3000;
     opacity: 1;
     visibility: visible;
