@@ -20,7 +20,7 @@
   }
 
   @media screen and (max-width: 767px) {
-    height: 100vh;
+    height: 477px;
   }
 
   @media screen and (min-width: 768px) and (max-width: 1279px) {
@@ -383,8 +383,8 @@
 .hero-round__ice__image {
   width: 171px;
   height: 410px;
-  -webkit-animation: pulsing 2s infinite;
-  animation: pulsing 2s infinite;
+  -webkit-animation: pulsing 2s 3.5;
+  animation: pulsing 2s 3.5;
   @media screen and (min-width: 768px) and (max-width: 1279px) {
     width: 143px;
     height: 336px;
@@ -464,12 +464,15 @@
     right: 34px;
     bottom: 0px;
   }
+  &:hover .hero-girl_image {
+    transform: perspective(400px) rotateY(180deg);
+  }
 }
 
 .hero-girl_image {
   width: 293px;
   height: 232px;
-
+  transition: transform 250ms linear;
   @media screen and (min-width: 768px) and (max-width: 1279px) {
     width: 168px;
     height: 133px;
