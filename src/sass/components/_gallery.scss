@@ -37,7 +37,7 @@
   height: 40px;
   border-radius: 15%;
   overflow: hidden;
-  transition: filter 600ms linear;
+  transition: filter 600ms linear, width 260ms linear, height 260ms linear;
   @media screen and (min-width: 768px) {
     width: 85px;
     height: 85px;
@@ -49,6 +49,9 @@
 }
 .gallery__content:hover {
   filter: grayscale(1);
+  width: 110%;
+  height: 110%;
+  z-index: 80;
 }
 .gallery__content:nth-child(1) {
   margin-top: auto;
