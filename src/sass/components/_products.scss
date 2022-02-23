@@ -30,16 +30,18 @@
 }
 .product-list {
   display: block;
+  margin-top: 144px;
 
   @media screen and (min-width: 768px) {
     display: flex;
     flex-direction: row;
     align-items: flex-start;
     justify-content: center;
+    margin-top: 150px;
   }
 
   @media screen and (min-width: 1280px) {
-    // margin-top: 49px;
+    margin-top: 259px;
   }
 }
 .product-item {
@@ -52,7 +54,6 @@
   height: 485px;
   padding-top: 161px;
   padding-bottom: 41px;
-  margin-top: 144px;
 
   margin-right: auto;
   margin-left: auto;
@@ -61,13 +62,11 @@
     margin-left: auto;
   }
   @media screen and (min-width: 768px) {
-    margin-top: 150px;
     width: 220px;
     padding: 152px 11px 41px;
   }
 
   @media screen and (min-width: 1280px) {
-    margin-top: 259px;
     width: 330px;
     height: 525px;
     padding: 163px 44px 50px;
