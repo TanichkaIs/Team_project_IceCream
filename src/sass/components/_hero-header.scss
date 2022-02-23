@@ -31,9 +31,7 @@
     height: 665px;
   }
 }
-.logo__image {
-  margin-right: 18px;
-}
+
 .logo {
   margin-right: 20px;
   display: flex;
@@ -46,7 +44,6 @@
   flex-direction: column;
   justify-content: center;
   text-align: center;
-  margin-left: 20px;
 
   @media screen and (min-width: 768px) and (max-width: 1279px) {
     margin-left: 34px;
@@ -59,6 +56,7 @@
 }
 
 .Logo-tekst {
+  margin-left: 18px;
   display: inline-block;
   font-family: Titan One;
   font-style: normal;
@@ -239,9 +237,9 @@
 }
 
 .hero-btn-left {
+  padding: 8px 13px;
   margin-right: 8px;
-  width: 62.4px;
-  height: 24px;
+
   font-family: DM Sans;
   font-style: normal;
   font-weight: normal;
@@ -249,23 +247,24 @@
   line-height: 1.25;
   align-items: center;
   text-align: center;
-  background: #ffffff;
+  background: #d41443;
   border-radius: 22px;
   border-color: transparent;
-  color: #d41443;
+  color: #ffffff;
   transition: background-color 250ms linear, color 250ms linear;
+  cursor: pointer;
 
   &:hover {
-    color: #ffffff;
-    background-color: rgba(212, 20, 67, 1);
+    color: rgba(212, 20, 67, 1);
+    background-color: #ffffff;
   }
 
   @media screen and (min-width: 768px) and (max-width: 1279px) {
     margin-right: 8px;
-    width: 61.2px;
   }
 
   @media screen and (min-width: 1280px) {
+    padding: 10px 20px;
     margin-right: 17px;
     width: 104px;
     height: 40px;
@@ -275,8 +274,7 @@
 }
 
 .hero-btn-right {
-  width: 102px;
-  height: 40px;
+  padding: 8px 13px;
   left: 115px;
   top: 333px;
   width: 82.8px;
@@ -300,6 +298,7 @@
   }
 
   @media screen and (min-width: 1280px) {
+    padding: 10px 20px;
     width: 138px;
     height: 40px;
     font-size: 14px;
@@ -506,17 +505,18 @@
 .hero-two-btn {
   position: absolute;
   display: flex;
-  left: 115px;
-  bottom: 292px;
-  @media screen and (max-width: 768px) {
+  z-index: 200;
+  position: absolute;
+  left: 20px;
+  bottom: -347px;
+  @media screen and (min-width: 768px) {
     position: absolute;
     left: 34px;
     bottom: 173px;
   }
-  @media screen and (max-width: 320px) {
-    position: absolute;
-    left: 20px;
-    bottom: 160px;
+  @media screen and (min-width: 1280px) {
+    left: 115px;
+    bottom: 292px;
   }
 }
 
