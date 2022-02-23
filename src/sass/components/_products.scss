@@ -340,6 +340,12 @@
   align-items: center;
   justify-content: center;
   margin: 0 auto;
+  transition: background-color 250ms linear, color 250ms linear;
+  &:hover,
+  &:focus {
+    background-color: $secondary-hover-color;
+    color: $main-color;
+  }
 }
 
 .product-item__extra-text {
@@ -392,7 +398,6 @@
   font-size: 22px;
   line-height: 1.52;
   text-align: center;
-  color: $secondary-text-color;
   padding-right: 3px;
   padding-bottom: 2px;
 }
@@ -408,14 +413,14 @@
 .right-arrow {
   width: 24px;
   height: 24px;
-  fill: $secondary-hover-color;
+  fill: currentColor;
   align-items: center;
   justify-content: center;
 }
 .icon-close {
   width: 24px;
   height: 24px;
-  fill: $main-color;
+  fill: currentColor;
   align-items: center;
   justify-content: center;
 }
