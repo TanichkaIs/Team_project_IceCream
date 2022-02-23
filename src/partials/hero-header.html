@@ -1,32 +1,14 @@
 <header class="header">
   <div class="container">
     <div class="header-container">
+      <div class="header-logo">
       <a class="logo" href="index.html">
 
-        <picture>
-          <source 
-                    srcset="
-                      ./images/header/logo.svg 1x, 
-                      ./images/header/logo2x.svg 2x"
-                     media="(min-width:1200px)"
-                   />
-
-          <source
-                     srcset="
-                        ./images/header/logodes1x.svg 1x"
-                     media="(min-width:768px)"
-                  />
-          <source
-                     srcset="
-                         ./images/header/logomob1x.svg 1x"
-                     media="(max-width:468px)"
-                  />
-                  <img src="./images/header/logo.svg" width="199" height="50" alt="site logo"
+       <img src="./images/header/Logo-new1.png" width="50" height="50" alt="site logo"
       />
-      </picture>
-        
+      <span class="Logo-tekst">IceCream</span></div>
         </a>
-      <nav class="header-nav">
+      <nav class="header-nav">  
         <ul class="nav-menu list">
           <li class="nav-menu__item">
             <a class="nav-menu__link link current" href="./index.html">Home</a>
@@ -90,14 +72,17 @@
       </nav>
     </div>
     <section class="hero">
+      <div class="hero-left-part">
       <h1 class="hero-title">ice cream made with<span>passion</span></h1>
-      <div class="hero-btn">
-        <form action="#product">
+      <ul class="hero-two-btn" href="#product">
+        <li class="hero-two-btn-item" href="#about">
           <button class="hero-btn-left">Products</button>
-        </form>
-        <form action="#about">
+        </li>
+        <li class="hero-two-btn-item" action="#about">
           <button class="hero-btn-right">How it's made?</button>
-        </form>
+        </li>
+      </ul></div>
+      
       </div>
       <div class="hero-round">
         <a class="hero-round__ice" href="#"
@@ -132,8 +117,10 @@
           </a>
       </div>
       <ul class="hero-text list">
-        <li class="hero-item"><span>16</span></li>
-        <li class="hero-item"><span>21</span></li>
+        <li class="hero-item"><span>16</span>
+        <h3 class="hero-text-name">cafe</h3></li>
+        <li class="hero-item"><span>21</span>
+        <p class="hero-text-name">food trucks</p></li>
       </ul>
       <a class="hero-milk" href="">
         <picture>
