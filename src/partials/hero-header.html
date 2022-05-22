@@ -28,7 +28,7 @@
           </li>
         </ul>
       </nav>
-      <button class="header__btn">
+      <button class="header__btn" data-modal-open>
         Buy now<svg class="header-icon" width="4" height="8">
           <use href="./images/sprite.svg#icon-header-btn"></use>
         </svg>
@@ -47,7 +47,7 @@
           <use class="mob-menu__icon-close" href="./images/sprite.svg#icon-close-button"></use>
         </svg>
       </button>
-      <button class="mob__btn">
+      <button class="mob__btn" data-modal-open-mob>
         Buy now<svg class="header-icon" width="4" height="8">
           <use href="./images/sprite.svg#icon-header-btn"></use>
         </svg>
@@ -179,5 +179,31 @@
         ><img class="hero-icon_image" src="./images/header/icon-hero.png" alt="milk"
       /></a>
     </section>
+  </div>
+  <div class="backdrop is-hidden" data-modal>
+ <div class ="modal__window">
+   <button data-modal-close type="button" class="close__modal">
+     <img class="close__button-modal" src="https://uxwing.com/wp-content/themes/uxwing/download/48-checkmark-cross/close.png" alt="">
+   </button>
+   <div class="form__box">
+     <b class="modal__recomend">Leave your info</b>
+      <form class="modal__form" autocomplete="off">
+      <label for="name" class="modal__label">Your name
+        <input class="modal__input" name="nik" type="text" id="name" />
+      </label>
+      <label class="modal__label">Phone
+        <input class="modal__input" name="telephone" type="tel" />
+      </label>
+      <label class="modal__label">Address
+        <input class="modal__input" name="adress" type="adress" />
+      </label>
+        <label class="modal__label">Your order
+          <textarea class="modal__textarea" name="coments" placeholder="Your order"></textarea>
+        
+        </label>
+        <button type="submit" class="modal__button">confirm</button>
+      </form>
+   </div>
+ </div>
   </div>
 </header>
